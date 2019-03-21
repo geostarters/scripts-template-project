@@ -1,0 +1,36 @@
+{
+  "name": "scripts-project-template",
+  "version": "1.0.0",
+  "description": "Template for scripting",
+  "main": "index.js",
+  "keywords": [
+    "node",
+    "scripts"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "@geostarters",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-s lint clean flow:build",
+    "run:example": "node ./scripts/example.js",
+    "clean": "rimraf scripts/*",
+    "lint": "eslint --fix --cache --ignore-path .gitignore src",
+    "flow": "flow",
+    "flow:check": "flow check ./src/*.js",
+    "flow:build": "flow-remove-types ./src/ -d ./scripts/ --all --pretty"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@geostarters/eslint-config": "0.0.1",
+    "envify": "^4.1.0",
+    "eslint-config-node": "^2.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "flow-bin": "^0.95.1",
+    "flow-remove-types": "^1.2.3",
+    "flow-typed": "^2.5.1",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.3"
+  }
+}
