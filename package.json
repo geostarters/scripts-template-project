@@ -21,9 +21,11 @@
     "flow:check": "flow check ./src/*.js",
     "flow:build": "flow-remove-types ./src/ -d ./scripts/ --all --pretty"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@geostarters/common": "^0.1.23"
+  },
   "devDependencies": {
-    "@geostarters/eslint-config": "0.0.1",
+    "@geostarters/eslint-config": "0.0.2",
     "envify": "^4.1.0",
     "eslint-config-node": "^2.0.0",
     "eslint-plugin-node": "^8.0.1",
