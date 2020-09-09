@@ -9,9 +9,9 @@ class Point {
 
 
 	static createPoint(point: Point2d) {
-		
+
 		return {lat: point.y, lon:  point.x};
-	
+
 	}
 
 }

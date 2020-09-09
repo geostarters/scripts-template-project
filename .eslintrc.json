@@ -4,7 +4,7 @@
     ],
     "rules": {
       "no-console": "off",
-      "import/no-commonjs": [2, { "allowRequire": true }],
+      "import/no-commonjs": [2, { "allowRequire": true, "allowPrimitiveModules": true }],
       "node/exports-style": ["error", "module.exports"],
       "node/prefer-global/buffer": ["error", "always"],
       "node/prefer-global/console": ["error", "always"],
