@@ -16,7 +16,7 @@
     "build": "run-s lint clean flow:build",
     "run:example": "node ./scripts/example.js",
     "clean": "rimraf scripts/*",
-    "lint": "eslint --fix --cache --ignore-path .gitignore src",
+    "lint": "eslint --fix --cache src",
     "flow": "flow",
     "flow:check": "flow check ./src/*.js",
     "flow:build": "flow-remove-types ./src/ -d ./scripts/ --all --pretty",
