@@ -23,7 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@geostarters/common": "^0.2.3"
+    "@geostarters/common": "^0.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
